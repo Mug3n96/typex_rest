@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const pool = require('../db/db');
 
-// word router
 router
   .route("/")
   .post(async (req, res) => {
