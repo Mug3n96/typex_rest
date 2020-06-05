@@ -19,7 +19,7 @@ app.use('/api/v1/word', require('./routers/word'));      //
 app.use('/api/v1/letter', require('./routers/letter'));  //
 // ---------------------------------------------------------//
 // public routes (read-only)
-// app.use('/api/v1/randomWords', require('./routers/randomWords'));
+app.use('/api/v1/randomWords', require('./routers/randomWords'));
 // app.use('/api/v1/customWords', require('./routers/randomWords'));
 // app.use('/api/v1/abstractWords', require('./routers/randomWords'));
 
