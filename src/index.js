@@ -3,7 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-
 // constants
 const PORT = 3030;
 
@@ -18,6 +17,10 @@ app.use('/api/v1/lang', require('./routers/lang'));      //
 app.use('/api/v1/word', require('./routers/word'));      //
 app.use('/api/v1/letter', require('./routers/letter'));  //
 // ---------------------------------------------------------//
+
+// user routes
+// app.use('/api/v1/user', require('./routers/user'));
+
 // public routes (read-only)
 app.use('/api/v1/randomWords', require('./routers/randomWords'));
 // app.use('/api/v1/customWords', require('./routers/randomWords'));
