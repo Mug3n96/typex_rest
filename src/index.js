@@ -22,9 +22,9 @@ app.use('/api/v1/letter', require('./routers/letter'));  //
 // app.use('/api/v1/user', require('./routers/user'));
 
 // public routes (read-only)
-app.use('/api/v1/randomWords', require('./routers/randomWords'));
-// app.use('/api/v1/customWords', require('./routers/randomWords'));
-// app.use('/api/v1/abstractWords', require('./routers/randomWords'));
+app.use('/api/v1/randomWords', require('./routers/getWords'));
+app.use('/api/v1/customWords', require('./routers/getWords'));
+app.use('/api/v1/abstractWords', require('./routers/getWords'));
 
 app.listen(PORT, () => {
   console.error(`app listen on ${PORT}.`);
